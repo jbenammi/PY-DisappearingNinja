@@ -1,0 +1,57 @@
+* {
+	padding: 0px;
+	margin: 0%;
+	font-family: arial, sans-serif;
+}
+img {
+	width: 20%;
+	display: block;
+	vertical-align: bottom;
+	margin: 5% auto;
+}
+
+img.block {
+	display: inline-block;
+}
+.center{
+	width: 170px;
+	margin: 3% auto;
+}
+
+
+h1 {
+	text-align: center;
+	color: blue;
+}
+
+.btn {
+	padding: 5px;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 3px 3px 3px #888888;
+	color: white;
+}
+
+p {
+	text-align: center;
+}
+
+.blue {
+	background-color: blue;
+}
+
+.red {
+	background-color: red;
+}
+
+.purple {
+	background-color: purple;
+}
+
+.orange {
+	background-color: orange;
+}
+
+.green {
+	background-color: green;
+}

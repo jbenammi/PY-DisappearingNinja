@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="Jonathan Ben-Ammi">
+	<title></title>
+	<meta name="description" content="">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='css/style.css')}}">
+
+</head>
+<body>
+	
+	{% if ninja == "show"%}
+	<h1>No Ninja Here</h1>
+	<p><a href="/ninja"><button class="btn green">Ninja</button></a><p>
+	{% endif %}
+
+
+
+	{% if ninja4 == "show"%}
+	<div class="center">
+		<a href="/ninja/blue"><button class="btn blue">blue</button></a>
+		<a href="/ninja/purple"><button class="btn purple">purple</button></a>
+		<a href="/ninja/red"><button class="btn red">red</button></a>
+		<a href="/ninja/orange"><button class="btn orange">orange</button></a>
+	</div>
+	<img class="block" src="{{url_for('static', filename='img/raphael.jpg')}}">
+	<img class="block" src="{{url_for('static', filename='img/leonardo.jpg')}}">
+	<img class="block" src="{{url_for('static', filename='img/donatello.jpg')}}">
+	<img class="block" src="{{url_for('static', filename='img/michelangelo.jpg')}}">
+	{% endif %}
+
+	{% if ninja == "red"%}
+	<div class="center">
+		<a href="/ninja/blue"><button class="btn blue">blue</button></a>
+		<a href="/ninja/purple"><button class="btn purple">purple</button></a>
+		<a href="/ninja/red"><button class="btn red">red</button></a>
+		<a href="/ninja/orange"><button class="btn orange">orange</button></a>
+	</div>	
+	<img src="{{url_for('static', filename='img/raphael.jpg')}}">
+	{% endif %}
+	{% if ninja == "blue"%}
+	<div class="center">
+		<a href="/ninja/blue"><button class="btn blue">blue</button></a>
+		<a href="/ninja/purple"><button class="btn purple">purple</button></a>
+		<a href="/ninja/red"><button class="btn red">red</button></a>
+		<a href="/ninja/orange"><button class="btn orange">orange</button></a>
+	</div>	<img src="{{url_for('static', filename='img/leonardo.jpg')}}">
+	{% endif %}
+	{% if ninja == "purple"%}
+	<div class="center">
+		<a href="/ninja/blue"><button class="btn blue">blue</button></a>
+		<a href="/ninja/purple"><button class="btn purple">purple</button></a>
+		<a href="/ninja/red"><button class="btn red">red</button></a>
+		<a href="/ninja/orange"><button class="btn orange">orange</button></a>
+	</div>	<img src="{{url_for('static', filename='img/donatello.jpg')}}">
+	{% endif %}
+	{% if ninja == "orange"%}
+	<div class="center">
+		<a href="/ninja/blue"><button class="btn blue">blue</button></a>
+		<a href="/ninja/purple"><button class="btn purple">purple</button></a>
+		<a href="/ninja/red"><button class="btn red">red</button></a>
+		<a href="/ninja/orange"><button class="btn orange">orange</button></a>
+	</div>	<img src="{{url_for('static', filename='img/michelangelo.jpg')}}">
+	{% endif %}
+</body>
+</html>
